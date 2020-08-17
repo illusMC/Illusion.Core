@@ -22,12 +22,12 @@ repositories {
         url = 'https://oss.sonatype.org/content/groups/public/'
     }
     maven { url = "https://jitpack.io"}
+    maven { url = "https://libraries.minecraft.net"}
 }
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT'
-    compileOnly 'net.sf.jopt-simple:jopt-simple:6.0-alpha-3'
-    compile 'com.github.neko-craft:NekoCommander:-SNAPSHOT'
+    compile group: 'me.lucko', name: 'commodore', version: '1.9'
     compile 'com.github.iceBear67:Util:-SNAPSHOT'
     // https://mvnrepository.com/artifact/com.dieselpoint/norm
     compile group: 'com.dieselpoint', name: 'norm', version: '0.8.10'
